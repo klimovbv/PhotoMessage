@@ -16,8 +16,8 @@ import com.squareup.picasso.Picasso;
 import java.io.IOException;
 
 public class MessageApplication extends Application{
-    public static final Uri API_ENDPOINT = Uri.parse(/*"http://10.208.160.100:8080"*/"http://messageapp.azurewebsites.net");
-    public static final String TOKEN = "f2b36dd2a4d84bff90e161de6323efbe";
+    public static final Uri API_ENDPOINT = Uri.parse("http://messageapp.azurewebsites.net");
+    public static final String TOKEN = "хххххххххххххххххххххххххххххххххх";
     private Auth auth;
     private Bus bus;
     private Picasso authedPicasso;
