@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/activity_contact_info_menuNewMessage"
+        app:showAsAction="withText|ifRoom"
+        android:icon="@drawable/ic_action_reply"
+        android:title="New Message"/>
+
+    <item
+        android:id="@+id/activity_contact_info_menuRemoveFriend"
+        android:title="Remove"
+        android:icon="@drawable/ic_action_delete"/>
+
+
+</menu>

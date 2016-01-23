@@ -1,0 +1,73 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.spb.kbv.messageapp">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="ANDROID.PERMISSION.WAKE_LOCK"/>
+
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <permission android:name="com.spb.kbv.messageapp.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.spb.kbv.messageapp.permission.C2D_MESSAGE"/>
+
+
+    <application android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:theme="@style/AppTheme"
+        android:name=".infrastructure.MessageApplication">
+
+        <receiver
+            android:name=".receivers.NotificationReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.spb.kbv.messageapp"/>
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+
+        </activity>
+
+        <activity android:name=".activities.LoginActivity"/>
+
+        <activity android:name=".activities.LoginNarrowActivity"/>
+
+        <activity android:name=".activities.RegisterActivity"/>
+
+        <activity android:name=".activities.ExternalLoginActivity"/>
+
+        <activity android:name=".activities.ProfileActivity"/>
+
+        <activity android:name=".activities.ContactsActivity"/>
+
+        <activity android:name=".activities.SentMessagesActivity"/>
+
+        <activity android:name=".activities.AuthenticationActivity"/>
+
+        <activity android:name=".activities.ContactInfoActivity"/>
+
+        <activity android:name=".activities.AddContactActivity"
+            android:theme="@style/AddContactTheme"/>
+
+        <activity android:name=".activities.MessageActivity"/>
+
+        <activity android:name=".activities.NewMessageActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.SelectContactActivity"/>
+
+        <activity android:name=".activities.SendMessageActivity"/>
+
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity"/>
+
+    </application>
+
+</manifest>

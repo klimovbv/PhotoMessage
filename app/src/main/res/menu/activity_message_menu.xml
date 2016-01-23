@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Reply"
+        android:id="@+id/acticity_message_menuReply"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_reply"/>
+    <item
+        android:title="Show Profile"
+        android:id="@+id/acticity_message_menuContact"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_user"/>
+    <item
+        android:title="Delete"
+        android:id="@+id/acticity_message_menuDelete"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_delete"/>
+
+</menu>

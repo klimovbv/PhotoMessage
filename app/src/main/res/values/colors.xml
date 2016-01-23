@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_color_dark">#2196F3</color>
+    <color name="primary_color_darker">#3F51B5</color>
+    <color name="list_item_nav_drawer_selected_item_text_color">#2196F3</color>
+    <color name="contacts_pending_contacts_request">#607D8B</color>
+    <color name="list_item_message_background_selected">#8C9EFE</color>
+    <color name="list_item_message_background">#eee</color>
+    <color name="list_item_message_background_unread">#FFF2CF</color>
+</resources>

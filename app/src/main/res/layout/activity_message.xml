@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/include_toolbar"
+        android:id="@+id/include_toolbar"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include_toolbar">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#444444"
+            android:id="@+id/activity_message_image"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Short Message"
+            android:textColor="#fff"
+            android:padding="20dp"
+            android:layout_gravity="center"
+            style="bold"
+            android:shadowColor="#000"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            android:rotation="10"
+            android:textSize="28sp"
+            android:id="@+id/activity_message_shortMessage"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:background="#881998FC"
+            android:id="@+id/activity_message_drawer">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Translate"
+                android:clickable="false"
+                android:textColor="#fff"
+                android:id="@+id/activity_message_translate"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Long Message"
+                android:textColor="#fff"
+                android:layout_centerInParent="true"
+                android:id="@+id/activity_message_longMessage"
+                android:padding="20dp"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/activity_message_progressFrame"
+        android:clickable="true"
+        android:background="#ee000000"
+        android:visibility="gone">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateOnly="true"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+</RelativeLayout>
